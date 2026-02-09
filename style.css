@@ -102,4 +102,37 @@ body {
 }
 .nav-links {
     display: flex;
+
+}
+
+/* Navigation hover effects */
+.menu {
+    position: relative;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+/* underline animation */
+.menu::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    background-color: #123b5a;
+    transition: width 0.3s ease;
+}
+
+.menu:hover {
+    color: #123b5a;
+}
+
+.menu:hover::after {
+    width: 100%;
+}
+
+.menu:hover {
+    color: #123b5a;
+    transform: translateY(-2px);
 }
