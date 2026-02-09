@@ -35,6 +35,14 @@ transition: color 0.3s ease, transform 0.2s ease;
 .hero {
     display: flex;
     min-height: calc(100vh - 70px);
+    flex-direction: row;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+    }
 }
 
 .hero-text {
@@ -138,4 +146,5 @@ transition: color 0.3s ease, transform 0.2s ease;
     color: #123b5a;
     transform: translateY(-2px);
 }
+
 
