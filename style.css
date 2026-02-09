@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 *,
 *::before,
 *::after {
@@ -150,6 +154,7 @@ body {
 .menu.active::after {
     width: 100%;
 }
+
 
 
 
