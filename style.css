@@ -38,13 +38,6 @@ transition: color 0.3s ease, transform 0.2s ease;
     flex-direction: row;
 }
 
-/* Mobile */
-@media (max-width: 900px) {
-    .hero {
-        flex-direction: column;
-    }
-}
-
 .hero-text {
     flex: 1;
     background: #f0edb4;
@@ -156,6 +149,7 @@ transition: color 0.3s ease, transform 0.2s ease;
 .menu.active::after {
     width: 100%;
 }
+
 
 
 
