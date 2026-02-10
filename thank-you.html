@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | Know Your Rights</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+    <div class="logo">
+        <a href="index.html">
+            <img src="Screenshot 2026-01-03 173539.png" alt="Know Your Rights Logo">
+        </a>
+    </div>
+
+    <div class="nav-links">
+        <a class="menu" href="index.html">Home</a>
+        <a class="menu" href="index.html#about">About us</a>
+        <a class="menu" href="index.html#articles">Articles</a>
+        <a class="menu" href="donate.html">Donate</a>
+        <a class="menu" href="contact.html">Contact</a>
+    </div>
+</header>
+
+<main class="thanks-page">
+    <div class="thanks-card reveal">
+        <div class="thanks-icon">✅</div>
+
+        <h1>Thank You!</h1>
+
+        <p class="thanks-text">
+            Your message has been sent successfully.
+            We truly appreciate you reaching out.
+        </p>
+
+        <p class="thanks-subtext">
+            Our team will review your message and get back to you
+            within <strong>24–48 hours</strong>.
+        </p>
+
+        <div class="thanks-actions">
+            <a href="index.html" class="btn-primary">Back to Home</a>
+            <a href="blogs.html" class="btn-secondary">Read Articles</a>
+        </div>
+    </div>
+</main>
+
+<!-- Scroll animation -->
+<script>
+const reveal = document.querySelector(".reveal");
+
+const observer = new IntersectionObserver(
+    ([entry]) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("active");
+        }
+    },
+    { threshold: 0.2 }
+);
+
+observer.observe(reveal);
+</script>
+
+</body>
+</html>
