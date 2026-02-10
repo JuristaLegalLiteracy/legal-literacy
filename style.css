@@ -70,8 +70,8 @@ body {
 
 .hero-image img {
     width: 100%;
-    height: auto;
-    object-fit: contain; /* optional */
+    height: 100%;
+    object-fit: cover;
 }
 
 /* Mobile */
@@ -154,5 +154,6 @@ body {
 .menu.active::after {
     width: 100%;
 }
+
 
 
