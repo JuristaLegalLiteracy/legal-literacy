@@ -433,5 +433,71 @@ body {
     color: #fff;
 }
 
+/* Container Background */
+#articles {
+    background-color: #e9e5a6; /* Matches your screenshot yellow */
+    padding: 50px 10%;
+}
+
+/* Horizontal Card Layout */
+.article-card {
+    display: flex;
+    background: white;
+    max-width: 900px;
+    margin: 0 auto 20px auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.article-image {
+    flex: 1; /* Image takes up half the card */
+}
+
+.article-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image isn't distorted */
+}
+
+.article-content {
+    flex: 1; /* Text takes up the other half */
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Typography matching the screenshot */
+.author { font-size: 0.8rem; color: #555; margin-bottom: 10px; }
+.article-content h3 { font-size: 1.8rem; color: #1a3a4a; margin-bottom: 15px; }
+.excerpt { color: #444; line-height: 1.6; }
+
+/* Footer styling */
+.article-footer {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+}
+
+/* See All Button */
+.see-all-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.btn-see-all {
+    padding: 10px 25px;
+    background-color: #1a3a4a;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn-see-all:hover {
+    background-color: #2a5a7a;
+}
 
 
