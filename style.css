@@ -356,4 +356,81 @@ body {
     }
 }
 
+/* ===== Thank You Page ===== */
+.thanks-page {
+    min-height: calc(100vh - 90px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+    background: #fafafa;
+}
+
+.thanks-card {
+    background: #fff;
+    max-width: 520px;
+    width: 100%;
+    padding: 3rem 2.5rem;
+    text-align: center;
+    border-radius: 14px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+.thanks-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.thanks-card h1 {
+    font-size: 2.2rem;
+    color: #123b5a;
+    margin-bottom: 1rem;
+}
+
+.thanks-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+}
+
+.thanks-subtext {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.thanks-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-primary,
+.btn-secondary {
+    padding: 0.7rem 1.4rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.btn-primary {
+    background: #123b5a;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: #0e2f47;
+}
+
+.btn-secondary {
+    border: 1px solid #123b5a;
+    color: #123b5a;
+}
+
+.btn-secondary:hover {
+    background: #123b5a;
+    color: #fff;
+}
+
 
