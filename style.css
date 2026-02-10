@@ -180,4 +180,67 @@ body {
     transform: translateX(0);
 }
 
+/* ===== Donate Page ===== */
+.donate-page {
+    display: flex;
+    justify-content: center;
+    padding: 3rem 1rem;
+}
+
+.donate-card {
+    max-width: 600px;
+    width: 100%;
+    background: #fff;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.donate-card h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #123b5a;
+}
+
+.beta {
+    font-size: 0.9rem;
+    color: #b8860b;
+}
+
+.donate-intro,
+.donate-note {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.donate-box {
+    margin: 2rem 0;
+}
+
+.donate-box img {
+    width: 220px;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+}
+
+.donate-details p {
+    margin: 0.4rem 0;
+}
+
+.upi-id span {
+    font-weight: 600;
+    color: #123b5a;
+}
+
+.donate-footer {
+    font-size: 0.9rem;
+    margin-top: 1.5rem;
+}
+
+.donate-footer a {
+    color: #123b5a;
+    text-decoration: underline;
+}
 
