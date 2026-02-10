@@ -39,12 +39,24 @@
             </div>
         </div>
 
-        <form class="contact-form">
-            <input type="text" placeholder="Your Name" required> <br>
-            <input type="email" placeholder="Your Email" required> <br>
-            <textarea placeholder="Your Message" rows="5" required></textarea> <br>
-            <button type="submit">Send Message</button>
-        </form>
+        <form
+  action="https://formspree.io/f/xwvnvkkp"
+  method="POST"
+>
+ <label>
+    Your Name:
+    <input type="name" name="name">
+  </label>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <button type="submit">Send</button>
+</form>
     </div>
 </section>
 <script>
@@ -67,6 +79,7 @@ window.addEventListener("scroll", () => {
 </script>
 </body>
 </html>
+
 
 
 
