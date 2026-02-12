@@ -101,8 +101,21 @@ window.addEventListener("scroll", () => {
     lastScrollY = currentScrollY;
 });
 </script>
+<script>
+const menuLinks = document.querySelectorAll(".nav-links .menu");
+const currentPath = window.location.pathname.split("/").pop();
+
+menuLinks.forEach(link => {
+    const href = link.getAttribute("href");
+
+    if (href === currentPath) {
+        link.classList.add("active");
+    }
+});
+</script>
 </body>
 </html>
+
 
 
 
