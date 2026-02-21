@@ -600,3 +600,14 @@ section h2 {
     margin: 0 auto;
     padding: 0 20px;
 }
+
+/* Add smooth transition to the base card */
+.article-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.article-card:hover {
+    transform: translateY(-8px); /* Lifts the card up */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Deepens the shadow */
+}
