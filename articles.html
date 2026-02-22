@@ -58,6 +58,77 @@
 
     </section>
 </main>
+<section class="article-request reveal">
+    <h2>Request to Publish an Article</h2>
+
+    <p class="article-request-intro">
+        If you have written an article related to legal awareness or
+        legal education, you may request to have it reviewed for
+        possible publication on this website.
+    </p>
+
+    <form
+        class="article-request-form"
+        action="https://api.web3forms.com/submit"
+        method="POST"
+    >
+        <!-- REQUIRED -->
+        <input type="hidden" name="access_key" value="b3656fd2-9184-4edd-aac8-8a54e29ae591">
+        <input
+          type="hidden"
+          name="autoresponse"
+          value="Thank you for submitting your article request.
+
+        We have received your submission and will review it for clarity, accuracy, and relevance to legal literacy.
+
+        Please note that submission does not guarantee publication. If your article is selected, we will contact you using this email address.
+
+        — Jurista Legal Literacy Team"
+        />
+        <!-- OPTIONAL BUT RECOMMENDED -->
+        <input type="hidden" name="subject" value="Article Publication Request">
+        <input type="hidden" name="from_name" value="Jurista Legal Literacy Website">
+        <input type="hidden" name="redirect" value="./thank-you.html">
+
+        <!-- BOT PROTECTION -->
+        <input type="checkbox" name="botcheck" class="hidden" style="display:none">
+
+        <label>
+            Your Name
+            <input type="text" name="name" required>
+        </label>
+
+        <label>
+            Email Address
+            <input type="email" name="email" required>
+        </label>
+
+        <label>
+            Article Title / Topic
+            <input type="text" name="article_title" required>
+        </label>
+
+        <label>
+            Brief Description of the Article
+            <textarea name="description" rows="4" required></textarea>
+        </label>
+
+        <label>
+            Link to Article (Google Docs / Drive / Website)
+            <input type="url" name="article_link" placeholder="https://">
+        </label>
+
+        <p class="article-note">
+            Submission does not guarantee publication.
+            All requests are reviewed for accuracy, clarity,
+            and relevance to legal literacy.
+        </p>
+
+        <button type="submit" class="btn-primary">
+            Submit Request
+        </button>
+    </form>
+</section>
 <script>
 let lastScrollY = window.scrollY;
 const navbar = document.querySelector(".nav");
@@ -90,6 +161,7 @@ menuLinks.forEach(link => {
 </script>
 </body>
 </html>
+
 
 
 
